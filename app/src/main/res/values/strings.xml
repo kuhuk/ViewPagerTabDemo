@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewPager-Tab Demo</string>
+    <string name="the_multiverse">The Multiverse</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="infinity">Infinity</string>
+</resources>
