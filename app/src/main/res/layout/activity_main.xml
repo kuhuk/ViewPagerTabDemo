@@ -17,7 +17,7 @@
             android:id="@+id/tvActionBar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="@string/infinity"
+            android:text="My Visits"
             android:gravity="center"
             android:textStyle="bold"/>
 
@@ -32,7 +32,6 @@
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         </android.support.v4.view.ViewPager>
 
     </LinearLayout>

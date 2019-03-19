@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AdapterUpcoming">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/date_my_visits"
+        android:textColor="#000"
+        android:layout_marginStart="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/rv_ll_adapter"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/tvTimeVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 am"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000"
+                    android:layout_toEndOf="@+id/tvTime"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="60dp"/>
+
+                <TextView
+                    android:id="@+id/tvPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Place"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginStart="15dp"
+                    android:layout_alignTop="@+id/tvTime"
+                    android:layout_marginTop="50dp"/>
+
+                <TextView
+                    android:id="@+id/tvPropertyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="That Wonderful House"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#FFC7556F"
+                    android:layout_toEndOf="@+id/tvPlace"
+                    android:layout_alignTop="@+id/tvTimeVal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="60dp"/>
+
+                <TextView
+                    android:id="@+id/tvAddressLine1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sector 2"
+                    android:fontFamily="@font/poppins"
+                    android:layout_alignTop="@+id/tvPropertyName"
+                    android:layout_toEndOf="@+id/tvPlace"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/tvAddressLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSR Layout"
+                    android:fontFamily="@font/poppins"
+                    android:layout_toEndOf="@id/tvAddressLine1"
+                    android:layout_alignTop="@id/tvPropertyName"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"/>
+
+                <Button
+                    android:id="@+id/btnChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Change"
+                    android:textColor="#FFF"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:layout_alignTop="@id/tvAddressLine1"
+                    android:layout_toEndOf="@id/tvPlace"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_gradient"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#D56D54"
+                    android:background="@drawable/button_outline"
+                    android:fontFamily="@font/poppins"
+                    android:layout_toEndOf="@+id/btnChange"
+                    android:layout_alignTop="@id/tvAddressLine2"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        
+    </LinearLayout>
+</LinearLayout>

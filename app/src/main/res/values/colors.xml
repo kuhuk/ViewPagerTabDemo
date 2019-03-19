@@ -3,4 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="grad_start_color">#ED9620</color>
+    <color name="grad_end_color">#C45075</color>
 </resources>

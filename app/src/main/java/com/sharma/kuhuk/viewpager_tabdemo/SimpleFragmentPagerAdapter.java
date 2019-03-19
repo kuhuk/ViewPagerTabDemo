@@ -19,11 +19,9 @@ class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new FragmentAddress();
+                return new FragmentUpcoming();
             case 1:
-                return new FragmentTBBT();
-            case 2:
-                return new FragmentTime();
+                return new FragmentPast();
             default:
                 return null;
         }
@@ -31,7 +29,7 @@ class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     @Nullable
@@ -39,11 +37,9 @@ class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0 :
-                return "Address";
+                return "Upcoming";
             case 1 :
-                return "TBBT";
-            case 2 :
-                return "Time";
+                return "Past";
              default:
                  return null;
         }
