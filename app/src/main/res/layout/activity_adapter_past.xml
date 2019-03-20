@@ -100,7 +100,7 @@
                     android:id="@+id/btnChange"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:text="Change"
+                    android:text="Book"
                     android:textColor="#FFF"
                     android:textAllCaps="false"
                     android:textAlignment="center"
@@ -124,11 +124,12 @@
                     android:layout_toEndOf="@+id/btnChange"
                     android:layout_alignTop="@id/tvAddressLine2"
                     android:layout_marginTop="30dp"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"/>
 
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
-        
+
     </LinearLayout>
 </LinearLayout>

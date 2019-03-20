@@ -40,7 +40,7 @@ class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
                 return "Upcoming";
             case 1 :
                 return "Past";
-             default:
+            default:
                  return null;
         }
     }

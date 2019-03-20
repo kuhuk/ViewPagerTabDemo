@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         setupUIViews();
 
-        // Create an adapter that knows which fragment should be shown on each page
+        // Create an adapter that knows which fragment should be shown on particular page
         SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(this, getSupportFragmentManager());
 
         // Set the adapter onto the view pager
